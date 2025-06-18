@@ -21,13 +21,13 @@
     white-space: normal;
   }
 
-  /* 通常価格・セール価格・割引率：強調 */
+  /* 通常価格・セール価格・割引率：強調（フォント大＆黒） */
   td:nth-child(2),
   td:nth-child(3),
   td:nth-child(4) {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
-    color: #d32f2f; /* 赤系で目立たせてもOK（任意） */
+    color: #000; /* ←黒に */
   }
 
   /* 他の列は折り返さない */
@@ -48,10 +48,11 @@
     td:nth-child(2),
     td:nth-child(3),
     td:nth-child(4) {
-      font-size: 15px; /* スマホでも見やすく */
+      font-size: 18px;
     }
   }
 </style>
+
 
 
 <table style="width:100%; border-collapse: collapse;" border="1">
