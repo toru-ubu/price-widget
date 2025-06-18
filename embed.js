@@ -1,53 +1,62 @@
 (function () {
   const html = `
-    <!-- ここに価格表のHTMLを貼る --><table style="width:100%; border-collapse: collapse;" border="1">
-  <tr>
-    <th>商品名</th>
-    <th>通常価格</th>
-    <th>セール価格</th>
-    <th>割引率</th>
-    <th>今が買い時？</th>
-  </tr>
-<tr>
-  <td><a href="https://www.dospara.co.jp/TC30/MC18484-SN4783.html" target="_blank">GALLERIA RM7R-R56T 7700搭載 夏の準備応援祭特別モデル 『Minecraft: Java ＆ Bedrock Edition for PC、PC Game Pass同梱版』</a></td>
-  <td>¥224,780</td>
-  <td>¥224,780</td>
-  <td>0.0%</td>
-  <td></td>
-</tr><tr>
-  <td><a href="https://www.dospara.co.jp/TC30/MC18485-SN4737.html" target="_blank">GALLERIA RM7R-R57 5700X搭載 夏の準備応援祭特別モデル 『Minecraft: Java ＆ Bedrock Edition for PC、PC Game Pass同梱版』</a></td>
-  <td>¥281,480</td>
-  <td>¥281,480</td>
-  <td>0.0%</td>
-  <td></td>
-</tr><tr>
-  <td><a href="https://www.dospara.co.jp/TC30/MC18486-SN4767.html" target="_blank">GALLERIA XA7C-R56T Intel Core Ultra/RTX5060Ti 16GB搭載 夏の準備応援祭特別モデル 『Minecraft: Java ＆ Bedrock Edition for PC、PC Game Pass同梱版』</a></td>
-  <td>¥325,480</td>
-  <td>¥325,480</td>
-  <td>0.0%</td>
-  <td></td>
-</tr><tr>
-  <td><a href="https://www.dospara.co.jp/TC30/MC18488-SN4757.html" target="_blank">GALLERIA XA7C-R58 Intel Core Ultra搭載 夏の準備応援祭特別モデル 『Minecraft: Java ＆ Bedrock Edition for PC、PC Game Pass同梱版』</a></td>
-  <td>¥545,180</td>
-  <td>¥545,180</td>
-  <td>0.0%</td>
-  <td></td>
-</tr><tr>
-  <td><a href="https://www.dospara.co.jp/TC30/MC18483-SN4821.html" target="_blank">GALLERIA RM5R-R56T 4500搭載 夏の準備応援祭特別モデル 『Minecraft: Java ＆ Bedrock Edition for PC、PC Game Pass同梱版』</a></td>
-  <td>¥181,980</td>
-  <td>¥181,980</td>
-  <td>0.0%</td>
-  <td></td>
-</tr><tr>
-  <td><a href="https://www.dospara.co.jp/TC30/MC18483.html" target="_blank">GALLERIA RM5R-R56T 4500搭載 夏の準備応援祭特別モデル 『Minecraft: Java ＆ Bedrock Edition for PC、PC Game Pass同梱版』</a></td>
-  <td>¥181,980</td>
-  <td>¥181,980</td>
-  <td>0.0%</td>
-  <td></td>
-</tr></table>
-  <p style="margin-top:10px; font-size:0.9em;">
-    提供元：<a href="https://kidukeba.co.jp/" target="_blank" rel="dofollow">合同会社気づけば</a>
-  </p>
+    <!-- ここに価格表のHTMLを貼る --><div style="display: flex; flex-direction: column; gap: 16px; font-family: sans-serif; padding: 10px;">
+  <div style="border: 1px solid #ccc; border-radius: 12px; padding: 12px; box-shadow: 2px 2px 8px rgba(0,0,0,0.1);">
+    <div style="font-weight: bold;">GALLERIA RM5R-R56T</div>
+    <div>💰 通常価格: ¥198,000</div>
+    <div>💸 セール価格: ¥179,800</div>
+    <div>📉 割引率: 9.2%</div>
+    <div style="color: #d32f2f; font-weight: bold;">✅ 今が買い時！</div>
+    <div style="margin-top: 8px;">
+      <a href="https://example.com" target="_blank" style="text-decoration: underline; color: #007bff;">商品ページを見る</a>
+    </div>
+  </div>
+
+  <div style="border: 1px solid #ccc; border-radius: 12px; padding: 12px; box-shadow: 2px 2px 8px rgba(0,0,0,0.1);">
+    <div style="font-weight: bold;">GALLERIA RM7R-R57</div>
+    <div>💰 通常価格: ¥228,000</div>
+    <div>💸 セール価格: ¥210,000</div>
+    <div>📉 割引率: 7.9%</div>
+    <!-- 今が買い時！なし -->
+    <div style="margin-top: 8px;">
+      <a href="https://example.com" target="_blank" style="text-decoration: underline; color: #007bff;">商品ページを見る</a>
+    </div>
+  </div>
+
+  <div style="border: 1px solid #ccc; border-radius: 12px; padding: 12px; box-shadow: 2px 2px 8px rgba(0,0,0,0.1);">
+    <div style="font-weight: bold;">GALLERIA XA7C-R58</div>
+    <div>💰 通常価格: ¥298,000</div>
+    <div>💸 セール価格: ¥268,000</div>
+    <div>📉 割引率: 10.1%</div>
+    <div style="color: #d32f2f; font-weight: bold;">✅ 今が買い時！</div>
+    <div style="margin-top: 8px;">
+      <a href="https://example.com" target="_blank" style="text-decoration: underline; color: #007bff;">商品ページを見る</a>
+    </div>
+  </div>
+
+  <div style="border: 1px solid #ccc; border-radius: 12px; padding: 12px; box-shadow: 2px 2px 8px rgba(0,0,0,0.1);">
+    <div style="font-weight: bold;">GALLERIA RM5C</div>
+    <div>💰 通常価格: ¥188,000</div>
+    <div>💸 セール価格: ¥188,000</div>
+    <div>📉 割引率: 0.0%</div>
+    <!-- 今が買い時！なし -->
+    <div style="margin-top: 8px;">
+      <a href="https://example.com" target="_blank" style="text-decoration: underline; color: #007bff;">商品ページを見る</a>
+    </div>
+  </div>
+
+  <div style="border: 1px solid #ccc; border-radius: 12px; padding: 12px; box-shadow: 2px 2px 8px rgba(0,0,0,0.1);">
+    <div style="font-weight: bold;">GALLERIA ULTRA</div>
+    <div>💰 通常価格: ¥398,000</div>
+    <div>💸 セール価格: ¥338,000</div>
+    <div>📉 割引率: 15.1%</div>
+    <div style="color: #d32f2f; font-weight: bold;">✅ 今が買い時！</div>
+    <div style="margin-top: 8px;">
+      <a href="https://example.com" target="_blank" style="text-decoration: underline; color: #007bff;">商品ページを見る</a>
+    </div>
+  </div>
+</div>
+
   
   `;
 
