@@ -1,5 +1,5 @@
 (function () {
-  const url = "https://toru-ubu.github.io/price-widget/index.html"; // GASで毎日更新されるHTML
+  const url = "https://toru-ubu.github.io/price-widget/index.html";
 
   fetch(url)
     .then(res => res.text())
