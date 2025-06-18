@@ -1,4 +1,19 @@
-/* 商品名：ちょっと広め、折り返しOK */
+<style>
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ccc;
+    min-width: 80px; /* 👈 ここで横幅を確保 */
+    white-space: nowrap; /* 👈 改行させない */
+  }
+
+  /* 商品名：ちょっと広め、折り返しOK */
 td:nth-child(1) {
   min-width: 180px;
   max-width: 260px;
@@ -12,6 +27,17 @@ th:nth-child(n+2):nth-child(-n+5) {
   min-width: 90px;
   white-space: nowrap;
 }
+
+  @media screen and (max-width: 600px) {
+    table {
+      font-size: 13px;
+    }
+    th, td {
+      padding: 6px;
+    }
+  }
+</style>
+
 
 <table style="width:100%; border-collapse: collapse;" border="1">
   <tr>
