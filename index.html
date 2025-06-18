@@ -1,55 +1,54 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<style>
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 14px;
-  }
-  th {
-    font-size: 16px;
-    font-weight: bold;
-    background-color: #e3f2fd;
-    padding: 10px;
-    border: 1px solid #ccc;
-    white-space: nowrap;
-  }
-  td {
-    padding: 8px;
-    text-align: left;
-    border: 1px solid #ccc;
-    min-width: 80px;
-    white-space: nowrap;
-  }
-  td:nth-child(1) {
-    min-width: 180px;
-    max-width: 260px;
-    word-break: break-word;
-    white-space: normal;
-  }
-  td:nth-child(2),
-  td:nth-child(3),
-  td:nth-child(4) {
-    font-size: 22px;
-    font-weight: bold;
-    color: #000;
-  }
-  td:nth-child(n+2):nth-child(-n+5),
-  th:nth-child(n+2):nth-child(-n+5) {
-    min-width: 90px;
-    white-space: nowrap;
-  }
-  @media screen and (max-width: 600px) {
-    table { font-size: 13px; }
-    th, td { padding: 6px; }
+  <meta charset="UTF-8">
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+    th {
+      font-size: 16px;
+      font-weight: bold;
+      background-color: #e3f2fd;
+      padding: 10px;
+      border: 1px solid #ccc;
+      white-space: nowrap;
+    }
+    td {
+      padding: 8px;
+      text-align: left;
+      border: 1px solid #ccc;
+      min-width: 80px;
+      white-space: nowrap;
+    }
+    td:nth-child(1) {
+      min-width: 180px;
+      max-width: 260px;
+      word-break: break-word;
+      white-space: normal;
+    }
     td:nth-child(2),
     td:nth-child(3),
-    td:nth-child(4) { font-size: 18px; }
-  }
-</style>
+    td:nth-child(4) {
+      font-size: 22px;
+      font-weight: bold;
+      color: #000;
+    }
+    td:nth-child(n+2):nth-child(-n+5),
+    th:nth-child(n+2):nth-child(-n+5) {
+      min-width: 90px;
+      white-space: nowrap;
+    }
+    @media screen and (max-width: 600px) {
+      table { font-size: 13px; }
+      th, td { padding: 6px; }
+      td:nth-child(2),
+      td:nth-child(3),
+      td:nth-child(4) { font-size: 18px; }
+    }
+  </style>
 </head>
 <body>
 
