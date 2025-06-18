@@ -3,55 +3,30 @@
     width: 100%;
     border-collapse: collapse;
     font-size: 14px;
-    margin: 10px 0;
   }
+
   th, td {
-    border: 1px solid #ddd;
     padding: 8px;
-    word-break: break-word;
-  }
-  th {
-    background-color: #f5f5f5;
     text-align: left;
+    border: 1px solid #ccc;
+    min-width: 80px; /* 👈 ここで横幅を確保 */
+    white-space: nowrap; /* 👈 改行させない */
   }
-  a {
-    color: #0066cc;
-    text-decoration: none;
+
+  td:nth-child(1) {
+    min-width: 140px;
+    max-width: 200px;
+    word-break: break-word;
+    white-space: normal; /* 商品名だけは折り返し可にする */
   }
-  a:hover {
-    text-decoration: underline;
-  }
-  @media (max-width: 600px) {
-    table, thead, tbody, th, td, tr {
-      display: block;
+
+  @media screen and (max-width: 600px) {
+    table {
+      font-size: 13px;
     }
-    thead tr {
-      display: none;
+    th, td {
+      padding: 6px;
     }
-    tr {
-      margin-bottom: 15px;
-      border-bottom: 2px solid #ccc;
-    }
-    td {
-      position: relative;
-      padding-left: 50%;
-    }
-    td::before {
-      position: absolute;
-      top: 8px;
-      left: 8px;
-      width: 45%;
-      padding-right: 10px;
-      white-space: nowrap;
-      font-weight: bold;
-      color: #555;
-    }
-    td:nth-child(1)::before { content: "商品名"; }
-    td:nth-child(2)::before { content: "通常価格"; }
-    td:nth-child(3)::before { content: "セール価格"; }
-    td:nth-child(4)::before { content: "割引率"; }
-    td:nth-child(5)::before { content: "取得日"; }
-    td:nth-child(6)::before { content: "今が買い時？"; }
   }
 </style>
 
