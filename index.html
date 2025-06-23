@@ -51,6 +51,7 @@
   </style>
 </head>
 <body>
+<input type="text" id="searchInput" placeholder="商品名で検索" style="margin-bottom: 10px; padding: 6px; width: 100%; max-width: 300px; font-size: 16px;">
 
   <table style="width:100%; border-collapse: collapse;" border="1">
     <tr>
@@ -362,5 +363,17 @@
 <p style="margin-top:10px; font-size:0.9em;">
   提供元：<a href="https://kidukeba.co.jp/" target="_blank" rel="dofollow">合同会社気づけば</a>
 </p>
+<script>
+  document.getElementById('searchInput').addEventListener('input', function () {
+    const filter = this.value.toLowerCase();
+    const rows = document.querySelectorAll('table tr');
+
+    rows.forEach((row, index) => {
+      if (index === 0) return; // ヘッダーは常に表示
+      const productName = row.cells[0]?.textContent?.toLowerCase() || "";
+      row.style.display = productName.includes(filter) ? "" : "none";
+    });
+  });
+</script>
 </body>
 </html>
