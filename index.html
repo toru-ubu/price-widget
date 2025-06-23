@@ -370,7 +370,8 @@
 
     rows.forEach((row, index) => {
       if (index === 0) return; // ヘッダーは常に表示
-      const productName = row.cells[0]?.textContent?.toLowerCase() || "";
+      const firstCell = row.querySelector('td:first-child');
+      const productName = firstCell?.textContent?.toLowerCase() || "";
       row.style.display = productName.includes(filter) ? "" : "none";
     });
   });
